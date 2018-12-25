@@ -5,6 +5,9 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Hello, welcome <span th:text="${name}"></span></h1>
+<h1>Hello, welcome to the Library Center!</h1>
+<ul>
+    <li th:each="map : ${booksMap}"><a th:href="@{'/catalog/'+${map.value}}" th:text="${map.key}"></a></li>
+</ul>
 </body>
 </html>

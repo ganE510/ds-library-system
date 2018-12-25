@@ -41,5 +41,9 @@ public class RedisExamples {
         for (String key : keys) {
             System.out.println("Keys in the database are: " + key);
         }
+
+        // FOURTH: DELETE the keys
+        jedis.del("runoobkey");
+        jedis.del("site-list");
     }
 }
