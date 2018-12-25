@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>BookInfo</title>
+</head>
+<body>
+<h1 th:text="${bookName}"></h1>
+<b>Book Information:<br></b>
+<p>ISBN number: <span th:text="${bookISBN}"></span><br></p>
+<p>Author of this book: <span th:text="${bookAuthor}"></span><br></p>
+<p>Publish in: <span th:text="${bookPublishYear}"></span><br></p>
+<p>Reference Price: <span th:text="${bookPrice}"></span><br></p>
+</body>
+</html>
