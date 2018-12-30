@@ -42,5 +42,7 @@ public class RedisPublisher {
         booksInfo3.put("Price", "5.0");
         jedis.hmset("Diary of a Wimpy Kid: The Meltdown", booksInfo3);
 
+        System.out.println("Successfully published on Redis!");
+
     }
 }

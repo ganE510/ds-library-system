@@ -22,7 +22,14 @@ public class MainLibraryController {
     public String index(HttpServletResponse response, Model model) {
         Map books = lbs.getAllBooks();
         model.addAttribute("booksMap", books);
-        return response.encodeRedirectURL("/index");
+        return response.encodeRedirectURL("index");
+    }
+
+    @RequestMapping("/index")
+    public String home(Model model){
+       Map books = lbs.getAllBooks();
+       model.addAttribute("booksMap", books);
+       return "index";
     }
 
     @RequestMapping("/catalog/{isbn}")

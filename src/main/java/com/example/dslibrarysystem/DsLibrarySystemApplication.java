@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DsLibrarySystemApplication {
 
     public static void main(String[] args) {
+        RedisPublisher.main(null);
         SpringApplication.run(DsLibrarySystemApplication.class, args);
     }
 }
